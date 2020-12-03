@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from 'src/page/Home';
-import Login from 'src/page/Login';
+import Login from 'src/page/SignIn';
 
 const Router: React.FC = ({ children }) => {
   return (
@@ -11,7 +11,7 @@ const Router: React.FC = ({ children }) => {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/login">
+          <Route path="/signin">
             <Login />
           </Route>
         </Switch>

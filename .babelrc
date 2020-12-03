@@ -17,5 +17,6 @@
         "isTSX": true
       }
     ]
-  ]
+  ],
+  "plugins": ["relay"]
 }
