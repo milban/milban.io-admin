@@ -1,23 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from 'src/page/Home';
-import Login from 'src/page/SignIn';
+import { Route, Switch } from 'react-router-dom';
+import Home from 'src/pages/Home';
+import Login from 'src/pages/SignIn';
+import { PathName } from 'src/constants/pathName';
 
-const Router: React.FC = ({ children }) => {
+const Router: React.FC = () => {
   return (
-    <>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/signin">
-            <Login />
-          </Route>
-        </Switch>
-      </BrowserRouter>
-      {children}
-    </>
+    <Switch>
+      <Route exact path={PathName.HOME}>
+        <Home />
+      </Route>
+      <Route path={PathName.HOME}>
+        <Login />
+      </Route>
+    </Switch>
   );
 };
 

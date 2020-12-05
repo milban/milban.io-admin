@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <Router></Router>
+      <Router />
     </>
   );
 };

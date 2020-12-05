@@ -1,13 +1,7 @@
 import React from 'react';
-import Nav from 'src/components/common/Nav';
 
 const Page: React.FC = ({ children }) => {
-  return (
-    <div>
-      <Nav />
-      {children}
-    </div>
-  );
+  return <main>{children}</main>;
 };
 
 export default Page;
