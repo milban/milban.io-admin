@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { fetchQuery, graphql } from 'react-relay';
 import Page from 'src/components/common/Page';
 import environment from 'src/relay.environment';
@@ -6,6 +6,7 @@ import { SignInQuery } from 'src/pages/SignIn/__generated__/SignInQuery.graphql'
 import { useSetRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
 import DefaultLayout from 'src/components/Layout/DefaultLayout';
+import useInput from 'src/hooks/useInput';
 
 const query = graphql`
   query SignInQuery($input: SignInInput!) {
@@ -14,21 +15,13 @@ const query = graphql`
 `;
 
 const SignIn: React.FC = () => {
-  const [userId, setUserId] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+  const { value: userId, onChange: onChangeUserId } = useInput();
+  const { value: password, onChange: onChangePassword } = useInput();
   const setIsAuth = useSetRecoilState(isAuthState);
-
-  const onChangeUserId: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    setUserId(e.target.value);
-  };
-
-  const onChangePassword: React.ChangeEventHandler<HTMLInputElement> = (e) => {
-    setPassword(e.target.value);
-  };
 
   const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-    if (!userId && !password) {
+    if (!userId || !password) {
       return;
     }
     try {
@@ -42,7 +35,10 @@ const SignIn: React.FC = () => {
           },
         },
       );
-      localStorage.setItem('token', token || '');
+      if (!token) {
+        throw new Error('서버 장애 발생: 문의를 남겨주세요.');
+      }
+      localStorage.setItem('token', token);
       setIsAuth(true);
     } catch (e) {
       console.log(e);
