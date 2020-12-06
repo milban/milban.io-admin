@@ -3,3 +3,4 @@ node_modules
 .graphqlrc.yml
 **/__generated__/**
 schema.graphql
+/.idea

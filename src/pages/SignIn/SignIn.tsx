@@ -3,14 +3,14 @@ import Page from 'src/components/common/Page';
 import { useSetRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
 import DefaultLayout from 'src/components/Layout/DefaultLayout';
-import useInput from 'src/hooks/useInput';
-import SignInMutation from 'src/mutations/auth/SignIn/SignInMutation';
-import environment from 'src/relay.environment';
+import useInput from 'src/hooks/common/useInput';
+import useSignIn from 'src/hooks/auth/useSignIn';
 
 const SignIn: React.FC = () => {
   const { value: userId, onChange: onChangeUserId } = useInput();
   const { value: password, onChange: onChangePassword } = useInput();
   const setIsAuth = useSetRecoilState(isAuthState);
+  const signIn = useSignIn();
 
   const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -18,21 +18,9 @@ const SignIn: React.FC = () => {
       return;
     }
     try {
-      SignInMutation.commit(environment, {
-        variables: {
-          input: {
-            userId,
-            password,
-          },
-        },
-        onCompleted: ({ signIn: token }) => {
-          if (!token) {
-            throw new Error('서버 장애 발생: 문의를 남겨주세요.');
-          }
-          localStorage.setItem('token', token);
-          setIsAuth(true);
-        },
-      });
+      const token = await signIn(userId, password);
+      localStorage.setItem('token', token);
+      setIsAuth(true);
     } catch (e) {
       console.log(e);
     }
