@@ -4,13 +4,13 @@ import { useSetRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
 import DefaultLayout from 'src/components/Layout/DefaultLayout';
 import useInput from 'src/hooks/common/useInput';
-import useSignIn from 'src/hooks/auth/useSignIn';
+import AuthModel from 'src/models/auth/AuthModel';
+import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
 
 const SignIn: React.FC = () => {
   const { value: userId, onChange: onChangeUserId } = useInput();
   const { value: password, onChange: onChangePassword } = useInput();
   const setIsAuth = useSetRecoilState(isAuthState);
-  const signIn = useSignIn();
 
   const onSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -18,8 +18,9 @@ const SignIn: React.FC = () => {
       return;
     }
     try {
-      const token = await signIn(userId, password);
-      localStorage.setItem('token', token);
+      const authModel: AuthModel = new AuthRelayModel();
+      const token = await authModel.signIn(userId, password);
+      authModel.saveToken(token);
       setIsAuth(true);
     } catch (e) {
       console.log(e);

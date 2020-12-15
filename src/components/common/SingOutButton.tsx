@@ -1,21 +1,24 @@
 import React from 'react';
 import { useSetRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
+import AuthModel from 'src/models/auth/AuthModel';
+import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
 
-interface UseLogout {
+interface UseSignOut {
   (): () => void;
 }
-const useLogout: UseLogout = () => {
+const useSignOut: UseSignOut = () => {
   const setIsAuthState = useSetRecoilState(isAuthState);
-  const logout = (): void => {
-    localStorage.removeItem('token');
+  const signOut = (): void => {
+    const authModel: AuthModel = new AuthRelayModel();
+    authModel.removeToken();
     setIsAuthState(false);
   };
-  return logout;
+  return signOut;
 };
 
 const SignOutButton: React.FC = ({ children }) => {
-  const logout = useLogout();
+  const logout = useSignOut();
   return <button onClick={logout}>{children || '로그아웃'}</button>;
 };
 

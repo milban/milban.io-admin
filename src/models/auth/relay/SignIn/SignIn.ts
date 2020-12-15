@@ -1,6 +1,6 @@
 import { commitMutation, Disposable, Environment, graphql } from 'react-relay';
 import { MutationConfig } from 'relay-runtime';
-import { SignInMutation } from 'src/mutations/auth/SignIn/__generated__/SignInMutation.graphql';
+import { SignInMutation } from 'src/models/auth/relay/SignIn/__generated__/SignInMutation.graphql';
 
 const mutation = graphql`
   mutation SignInMutation($input: SignInInput!) {

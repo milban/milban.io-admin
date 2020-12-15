@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from 'src/pages/Home';
-import Login from 'src/pages/SignIn';
+import SignIn from 'src/pages/SignIn';
 import { PathName } from 'src/constants/pathName';
 
 const Router: React.FC = () => {
@@ -10,8 +10,8 @@ const Router: React.FC = () => {
       <Route exact path={PathName.HOME}>
         <Home />
       </Route>
-      <Route path={PathName.HOME}>
-        <Login />
+      <Route path={PathName.SIGN_IN}>
+        <SignIn />
       </Route>
     </Switch>
   );

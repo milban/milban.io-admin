@@ -6,9 +6,12 @@ import {
   Store,
   Variables,
 } from 'relay-runtime';
+import AuthModel from 'src/models/auth/AuthModel';
+import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
 
 function fetchQuery(operation: RequestParameters, variables: Variables) {
-  const token = localStorage.getItem('token');
+  const authModel: AuthModel = new AuthRelayModel();
+  const token = authModel.getToken();
   return fetch('http://localhost:3000/graphql', {
     method: 'POST',
     headers: {
