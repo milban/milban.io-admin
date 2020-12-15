@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 
 interface UseInput {
-  (value?: string | undefined): {
-    value: string | undefined;
+  (value?: string): {
+    value: string;
     onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>;
     setValue: (value: string) => void;
   };
 }
 
-const useInput: UseInput = (value = undefined) => {
-  const [_value, setValue] = useState<string | undefined>(undefined);
+const useInput: UseInput = (value = '') => {
+  const [_value, setValue] = useState<string>('');
 
   const _setValue = (value: string) => {
     setValue(value);
