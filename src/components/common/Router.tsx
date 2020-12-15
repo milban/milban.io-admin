@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Home from 'src/pages/Home';
-import SignIn from 'src/pages/SignIn';
+import HomePage from 'src/pages/HomePage';
+import SignInPage from 'src/pages/SignInPage';
 import { PathName } from 'src/constants/pathName';
 
 const Router: React.FC = () => {
   return (
     <Switch>
       <Route exact path={PathName.HOME}>
-        <Home />
+        <HomePage />
       </Route>
       <Route path={PathName.SIGN_IN}>
-        <SignIn />
+        <SignInPage />
       </Route>
     </Switch>
   );

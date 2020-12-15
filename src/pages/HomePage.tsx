@@ -2,7 +2,7 @@ import React from 'react';
 import Page from 'src/components/common/Page';
 import DefaultLayout from 'src/components/Layout/DefaultLayout';
 
-const Home: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <DefaultLayout>
       <Page>home</Page>
@@ -10,4 +10,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomePage;

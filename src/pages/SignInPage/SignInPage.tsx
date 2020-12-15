@@ -9,7 +9,7 @@ import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
 import { useHistory } from 'react-router-dom';
 import { PathName } from 'src/constants/pathName';
 
-const SignIn: React.FC = () => {
+const SignInPage: React.FC = () => {
   const history = useHistory();
   const { value: userId, onChange: onChangeUserId } = useInput();
   const { value: password, onChange: onChangePassword } = useInput();
@@ -61,4 +61,4 @@ const SignIn: React.FC = () => {
   );
 };
 
-export default SignIn;
+export default SignInPage;
