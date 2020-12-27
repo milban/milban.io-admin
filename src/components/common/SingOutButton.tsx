@@ -3,7 +3,7 @@ import { useSetRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
 import AuthModel from 'src/models/auth/AuthModel';
 import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
-import Button from 'src/components/common/Button';
+import Button, { ButtonProps } from 'src/components/common/Button';
 
 interface UseSignOut {
   (): () => void;
@@ -18,9 +18,13 @@ const useSignOut: UseSignOut = () => {
   return signOut;
 };
 
-const SignOutButton: React.FC = ({ children }) => {
+const SignOutButton: React.FC<ButtonProps> = ({ children, ...restProps }) => {
   const logout = useSignOut();
-  return <Button onClick={logout}>{children || '로그아웃'}</Button>;
+  return (
+    <Button onClick={logout} {...restProps}>
+      {children || '로그아웃'}
+    </Button>
+  );
 };
 
 export default SignOutButton;
