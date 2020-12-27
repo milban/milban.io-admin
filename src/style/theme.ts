@@ -2,25 +2,35 @@ import { DefaultTheme, DarkTheme } from 'styled-components';
 
 const defaultTheme: DefaultTheme = {
   colors: {
-    main: '#0266D6',
-    secondary: '#DDEEFF',
-    point: '#2B974B',
-    danger: '#DF7679',
-    foreground: '#FAFBFC',
-    background: '#FFFFFF',
-    font: '#24292E',
+    primary: '#ffffff',
+    primaryLight: '#ffffff',
+    primaryDark: '#cccccc',
+    secondary: '#a5d6a7',
+    secondaryLight: '#d7ffd9',
+    secondaryDark: '#75a478',
+    danger: '#ef5350',
+    dangerLight: '#ff867c',
+    dangerDark: '#b61827',
+    fontOnPrimary: '#000000',
+    fontOnSecondary: '#ffffff',
+    fontOnDanger: '#ffffff',
   },
 };
 
 const darkTheme: DarkTheme = {
   colors: {
-    main: '#E5C07B',
-    secondary: '#f8f8f2',
-    point: '#98C379',
-    danger: '#DF7679',
-    foreground: '#21242B',
-    background: '#282a36',
-    font: '#ABB2BF',
+    primary: '#18191a',
+    primaryLight: '#3e3f40',
+    primaryDark: '#000000',
+    secondary: '#a5d6a7',
+    secondaryLight: '#d7ffd9',
+    secondaryDark: '#75a478',
+    danger: '#ef5350',
+    dangerLight: '#ff867c',
+    dangerDark: '#b61827',
+    fontOnPrimary: '#ffffff',
+    fontOnSecondary: '#000000',
+    fontOnDanger: '#000000',
   },
 };
 

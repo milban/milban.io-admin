@@ -1,13 +1,18 @@
 import 'styled-components';
 
 interface Colors {
-  main: string;
+  primary: string;
+  primaryLight: string;
+  primaryDark: string;
   secondary: string;
-  point: string;
+  secondaryLight: string;
+  secondaryDark: string;
   danger: string;
-  foreground: string;
-  background: string;
-  font: string;
+  dangerLight: string;
+  dangerDark: string;
+  fontOnPrimary: string;
+  fontOnSecondary: string;
+  fontOnDanger: string;
 }
 
 declare module 'styled-components' {

@@ -8,6 +8,7 @@ import AuthModel from 'src/models/auth/AuthModel';
 import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
 import { useHistory } from 'react-router-dom';
 import { PathName } from 'src/constants/pathName';
+import Button from 'src/components/common/Button';
 
 const SignInPage: React.FC = () => {
   const history = useHistory();
@@ -54,7 +55,7 @@ const SignInPage: React.FC = () => {
               onChange={onChangePassword}
             />
           </label>
-          <button type="submit">로그인</button>
+          <Button type="submit">로그인</Button>
         </form>
       </Page>
     </DefaultLayout>
