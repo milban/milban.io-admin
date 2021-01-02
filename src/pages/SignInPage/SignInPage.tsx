@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import Page from 'src/components/common/Page';
 import { useRecoilState } from 'recoil';
 import { isAuthState } from 'src/stores/auth';
-import DefaultLayout from 'src/components/Layout/DefaultLayout';
 import useInput from 'src/hooks/common/useInput';
 import AuthModel from 'src/models/auth/AuthModel';
 import { AuthRelayModel } from 'src/models/auth/AuthRelayModel';
@@ -39,26 +37,22 @@ const SignInPage: React.FC = () => {
   }, [isAuth]);
 
   return (
-    <DefaultLayout>
-      <Page>
-        <form onSubmit={onSubmit}>
-          <label>
-            ID:
-            <input placeholder="id" value={userId} onChange={onChangeUserId} />
-          </label>
-          <label>
-            Password:
-            <input
-              placeholder="password"
-              type="password"
-              value={password}
-              onChange={onChangePassword}
-            />
-          </label>
-          <Button type="submit">로그인</Button>
-        </form>
-      </Page>
-    </DefaultLayout>
+    <form onSubmit={onSubmit}>
+      <label>
+        ID:
+        <input placeholder="id" value={userId} onChange={onChangeUserId} />
+      </label>
+      <label>
+        Password:
+        <input
+          placeholder="password"
+          type="password"
+          value={password}
+          onChange={onChangePassword}
+        />
+      </label>
+      <Button type="submit">로그인</Button>
+    </form>
   );
 };
 
