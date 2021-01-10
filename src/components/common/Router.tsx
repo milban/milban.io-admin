@@ -6,6 +6,7 @@ import { PathName } from 'src/constants/pathName';
 import DefaultLayout from 'src/components/Layout/DefaultLayout';
 import Page from 'src/components/common/Page';
 import PostsPage from 'src/pages/PostsPage';
+import PostsByCursorPage from 'src/pages/PostsByCursorPage';
 
 const Router: React.FC = () => {
   return (
@@ -28,6 +29,13 @@ const Router: React.FC = () => {
         <DefaultLayout>
           <Page>
             <PostsPage />
+          </Page>
+        </DefaultLayout>
+      </Route>
+      <Route path={PathName.POSTS_BY_CURSOR}>
+        <DefaultLayout>
+          <Page>
+            <PostsByCursorPage />
           </Page>
         </DefaultLayout>
       </Route>

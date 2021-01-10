@@ -226,11 +226,6 @@
         "signature": "591ba4bf9bed0255ded3d3ab0e1a6f44ff31b5a70abdc9511aa753e24a9ecd78",
         "affectsGlobalScope": false
       },
-      "../src/components/common/Page.tsx": {
-        "version": "3c1dfe11a25f455fd75407da8c30fd0c0bd4cee35a152a2fedebdb65d26c32e9",
-        "signature": "3cbe16fcdbefa4c0d4da501f4d375e664c0468e917436d56bab89603c48e2e77",
-        "affectsGlobalScope": false
-      },
       "../node_modules/recoil/index.d.ts": {
         "version": "01b4b543495b871f18e2e1ec70f2adf2e7b2e7792da9f62df7c07c4087e2a12f",
         "signature": "01b4b543495b871f18e2e1ec70f2adf2e7b2e7792da9f62df7c07c4087e2a12f",
@@ -506,9 +501,14 @@
         "signature": "0bf7d593c5265deb896c05f5fe1fa59c7c551490a534c7445d21f2f61757c5a0",
         "affectsGlobalScope": false
       },
+      "../src/hooks/common/useInput.ts": {
+        "version": "c2040d7de1e9186f52837388cc943f22d8f9e596b435dfd6bff091c8de8fa167",
+        "signature": "9b61cf93f9374b0f849996bf2469665032de799632b8303cf9d679f6966f8483",
+        "affectsGlobalScope": false
+      },
       "../src/constants/pathName.ts": {
-        "version": "309e293fe14dbb30360ff66a5e52c11cdf406f46d9446ea1fba8a2ce34a1d8f2",
-        "signature": "1ba7e40424b53d37ebfa8a682c27f86d5746ebcba12d3d6281e81388a6caeb5f",
+        "version": "ea3550220f4ca2fc29caa9fda89a4f62bcdaa209ad02ff8bd095920fc363bf86",
+        "signature": "efe21b1b8f688f042b901922469dccbfb723e576fa73bf10f6e1623dcad01334",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/hoist-non-react-statics/index.d.ts": {
@@ -521,14 +521,24 @@
         "signature": "6839e1779e1f61e0ed62b1ca3ff7e74dc70479a5455077a38434d0e404103c28",
         "affectsGlobalScope": true
       },
-      "../src/components/common/Nav.tsx": {
-        "version": "11c4566fbf61ed3ac2a111ca827e27b99862c9a3834404e43792299af62e6b18",
-        "signature": "c173cd658285480294a173e113df6e7e12dfdc797c68d9f14c97fd41c394f6e9",
-        "affectsGlobalScope": false
-      },
       "../src/components/common/Button.tsx": {
         "version": "1a5d546eea8a013b303ef47903e42895078f1628407285ff335f09dd8cf91e82",
-        "signature": "179c6010986c213dd3d5565ba8bbb30d6a52e3e1ff2990bd6c0a475d04904515",
+        "signature": "6e84264f294ac93a412394ad53a1fc1eb41c6f1c07da626ded14ca312299921a",
+        "affectsGlobalScope": false
+      },
+      "../src/pages/SignInPage/SignInPage.tsx": {
+        "version": "f9fed7fc89785f6ba76323cb5a27c12d2edb4824767f45199fb71d4873795c13",
+        "signature": "29c238c200d36f2007af43cb44d8001db667ab85dc7fa56cc2273fb8fcd52837",
+        "affectsGlobalScope": false
+      },
+      "../src/pages/SignInPage/index.ts": {
+        "version": "3c0f604a94482a2c8036ebf40ce9d406d5d1b39dd6fe0b5ae55546bd96aeb016",
+        "signature": "3c0f604a94482a2c8036ebf40ce9d406d5d1b39dd6fe0b5ae55546bd96aeb016",
+        "affectsGlobalScope": false
+      },
+      "../src/components/common/Nav.tsx": {
+        "version": "171615102b55d043864bed64fe745b2a7eb692c088131d6f9eec413457444415",
+        "signature": "c173cd658285480294a173e113df6e7e12dfdc797c68d9f14c97fd41c394f6e9",
         "affectsGlobalScope": false
       },
       "../src/components/common/SingOutButton.tsx": {
@@ -556,19 +566,9 @@
         "signature": "f9746b947200c92ff547305456e9ba07973199eb9fccd355e565416af4d9900c",
         "affectsGlobalScope": false
       },
-      "../src/hooks/common/useInput.ts": {
-        "version": "c2040d7de1e9186f52837388cc943f22d8f9e596b435dfd6bff091c8de8fa167",
-        "signature": "9b61cf93f9374b0f849996bf2469665032de799632b8303cf9d679f6966f8483",
-        "affectsGlobalScope": false
-      },
-      "../src/pages/SignInPage/SignInPage.tsx": {
-        "version": "53d66a9e583b4816487851fbf6f66dfa41856b36aa045679ac02d6ede0144f8b",
-        "signature": "29c238c200d36f2007af43cb44d8001db667ab85dc7fa56cc2273fb8fcd52837",
-        "affectsGlobalScope": false
-      },
-      "../src/pages/SignInPage/index.ts": {
-        "version": "3c0f604a94482a2c8036ebf40ce9d406d5d1b39dd6fe0b5ae55546bd96aeb016",
-        "signature": "3c0f604a94482a2c8036ebf40ce9d406d5d1b39dd6fe0b5ae55546bd96aeb016",
+      "../src/components/common/Page.tsx": {
+        "version": "3c1dfe11a25f455fd75407da8c30fd0c0bd4cee35a152a2fedebdb65d26c32e9",
+        "signature": "3cbe16fcdbefa4c0d4da501f4d375e664c0468e917436d56bab89603c48e2e77",
         "affectsGlobalScope": false
       },
       "../src/components/post/PostsByOffset/__generated__/PostsByOffset_node.graphql.ts": {
@@ -582,7 +582,7 @@
         "affectsGlobalScope": false
       },
       "../src/components/post/PostsByOffset/PostsByOffset.tsx": {
-        "version": "e0097a86587b1381649fb3c5f49ef6ef3249e24618bb0acb41fc6417b6d9ee85",
+        "version": "72bbe1a95403d4d3958f726cc89cc993458f92516fa35e04ba27934c24a4e841",
         "signature": "35a658952184867849044303e15500b04b7eb937d8fa4d143f01ae076b4db015",
         "affectsGlobalScope": false
       },
@@ -601,8 +601,38 @@
         "signature": "bf0caa4ea9781043bf90006aa3b94099edee9a6cec872ecf5b4e84e4173c2f56",
         "affectsGlobalScope": false
       },
+      "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts": {
+        "version": "ef3adb6768b2b032cddbfca86d356ddf2e66ac4db39c231d533c09c255de5f4a",
+        "signature": "58891f18a355ec5f8d00d00840b0a8b128257a5f774abe9478f6a531c1750806",
+        "affectsGlobalScope": false
+      },
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts": {
+        "version": "f799f1c9f565a6ad9a3d853c04ed7ac70a1ce23539c40901ec3b273fa1e37719",
+        "signature": "da1d49ca5a7d8eaa978811ea16d038079f048e7d63c6037ca7293f59bc85cdbe",
+        "affectsGlobalScope": false
+      },
+      "../src/components/post/PostsByCursor/PostsByCursor.tsx": {
+        "version": "56a84b39137e80a16b816e4e08ff052d8f7f9eb946b4719ca5b8bbdceafc7190",
+        "signature": "b62a6b96d554a91448745c122f70c565a6a77e7119030a092267627892338862",
+        "affectsGlobalScope": false
+      },
+      "../src/components/post/PostsByCursor/index.ts": {
+        "version": "3a7f3c5fe71c3e2be391a221d674007c6831a6e3e5069eb920f4facaa5fe9e5f",
+        "signature": "3a7f3c5fe71c3e2be391a221d674007c6831a6e3e5069eb920f4facaa5fe9e5f",
+        "affectsGlobalScope": false
+      },
+      "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx": {
+        "version": "2d0134bee12b270518f19a526928a31a04e2b4c0e5eee0eb4f8bf462e50f2814",
+        "signature": "97260996aaca568d95bc752dd7a4956227a520c30ae075365ebebb4733c63958",
+        "affectsGlobalScope": false
+      },
+      "../src/pages/PostsByCursorPage/index.ts": {
+        "version": "dbd5b4b5d04d27652a985701a3859be80d87b83d9828c967b75342226bf07af0",
+        "signature": "dbd5b4b5d04d27652a985701a3859be80d87b83d9828c967b75342226bf07af0",
+        "affectsGlobalScope": false
+      },
       "../src/components/common/Router.tsx": {
-        "version": "eb44dfb1d5d0604ba4fdaf3f6af39ae9819f59b767e8ed21c3b379e17ca67e82",
+        "version": "59409ffc600a810ed14c654eb27fbf7392759db49b4d1408dc45e59593e21735",
         "signature": "ec673b70f72a184a804b653b0aba89719abdccd9ef687637d8ea8a75212eb73b",
         "affectsGlobalScope": false
       },
@@ -636,24 +666,14 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
-      "../src/components/post/__generated__/PostsPaginationQuery.graphql.ts": {
-        "version": "467a12cb17a5ff73762550b09bf707228efa8420438384f3ce5c1e39fd086f38",
-        "signature": "292ae9533310a29ab408d6cbcf063be1d508d772358e2e1436d6b6e990f5457e",
-        "affectsGlobalScope": false
-      },
-      "../src/components/post/Posts.tsx": {
-        "version": "997cf771b25d9e32fafc59de88f81396db091527bdfc677e292f6061446ce10f",
-        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursorPaginationQuery.graphql.ts": {
+        "version": "2a932c58583b87424a7a0a91ff519f6fa62337febce6fcf02f56c6cc26c7d45f",
+        "signature": "97d574803d77407e7437c05f9806e8137e9f4c61c6ca9db82551261d93d5e059",
         "affectsGlobalScope": false
       },
       "../src/components/post/PostsByOffset/__generated__/PostsByOffsetRefetchQuery.graphql.ts": {
         "version": "72466b0b3f56cf276c95f8f2565c6032af29b620ea695a2f9fb25d5a9f0bf312",
         "signature": "40e2449f718967d64d687e3f6b703b47d5e81c6766d4017b8797fd0bb83a41f2",
-        "affectsGlobalScope": false
-      },
-      "../src/components/post/__generated__/Posts_posts.graphql.ts": {
-        "version": "b75a077f283716c41c3d5808cb48e4657ebd4bd05969abb1461189227282f679",
-        "signature": "bd40d48beefb1d888cca26f2158d137ab4f456623e435d76a1cd49d25c1d92ed",
         "affectsGlobalScope": false
       },
       "../src/models/auth/relay/SignIn/index.ts": {
@@ -1646,6 +1666,7 @@
         "../src/components/common/Page.tsx",
         "../src/constants/pathName.ts",
         "../src/pages/HomePage.tsx",
+        "../src/pages/PostsByCursorPage/index.ts",
         "../src/pages/PostsPage/index.ts",
         "../src/pages/SignInPage/index.ts"
       ],
@@ -1663,10 +1684,20 @@
         "../src/components/common/Button.tsx",
         "../src/stores/theme.ts"
       ],
-      "../src/components/post/Posts.tsx": [
+      "../src/components/post/PostsByCursor/PostsByCursor.tsx": [
         "../node_modules/@types/react-relay/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
-        "../src/components/post/__generated__/PostsPaginationQuery.graphql.ts"
+        "../src/components/common/Button.tsx",
+        "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts"
+      ],
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursorPaginationQuery.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/components/post/PostsByCursor/index.ts": [
+        "../src/components/post/PostsByCursor/PostsByCursor.tsx"
       ],
       "../src/components/post/PostsByOffset/PostsByOffset.tsx": [
         "../node_modules/@types/react-relay/index.d.ts",
@@ -1683,12 +1714,6 @@
       ],
       "../src/components/post/PostsByOffset/index.ts": [
         "../src/components/post/PostsByOffset/PostsByOffset.tsx"
-      ],
-      "../src/components/post/__generated__/PostsPaginationQuery.graphql.ts": [
-        "../node_modules/@types/relay-runtime/index.d.ts"
-      ],
-      "../src/components/post/__generated__/Posts_posts.graphql.ts": [
-        "../node_modules/@types/relay-runtime/index.d.ts"
       ],
       "../src/hooks/common/useInput.ts": [
         "../node_modules/@types/react/index.d.ts"
@@ -1733,6 +1758,19 @@
       "../src/pages/HomePage.tsx": [
         "../node_modules/@types/react/index.d.ts"
       ],
+      "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx": [
+        "../node_modules/@types/react-relay/index.d.ts",
+        "../node_modules/@types/react/index.d.ts",
+        "../src/components/post/PostsByCursor/index.ts",
+        "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts",
+        "../src/relay.environment.ts"
+      ],
+      "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/pages/PostsByCursorPage/index.ts": [
+        "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx"
+      ],
       "../src/pages/PostsPage/PostsPage.tsx": [
         "../node_modules/@types/react-relay/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
@@ -1751,9 +1789,7 @@
         "../node_modules/@types/react-router-dom/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/recoil/index.d.ts",
-        "../src/components/Layout/DefaultLayout.tsx",
         "../src/components/common/Button.tsx",
-        "../src/components/common/Page.tsx",
         "../src/constants/pathName.ts",
         "../src/hooks/common/useInput.ts",
         "../src/models/auth/AuthModel.ts",
@@ -2340,6 +2376,20 @@
       "../src/components/common/ThemeToggleButton.tsx": [
         "../node_modules/@types/react/index.d.ts"
       ],
+      "../src/components/post/PostsByCursor/PostsByCursor.tsx": [
+        "../node_modules/@types/react-relay/index.d.ts",
+        "../node_modules/@types/react/index.d.ts",
+        "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts"
+      ],
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursorPaginationQuery.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/components/post/PostsByCursor/index.ts": [
+        "../src/components/post/PostsByCursor/PostsByCursor.tsx"
+      ],
       "../src/components/post/PostsByOffset/PostsByOffset.tsx": [
         "../node_modules/@types/react-relay/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
@@ -2353,12 +2403,6 @@
       ],
       "../src/components/post/PostsByOffset/index.ts": [
         "../src/components/post/PostsByOffset/PostsByOffset.tsx"
-      ],
-      "../src/components/post/__generated__/PostsPaginationQuery.graphql.ts": [
-        "../node_modules/@types/relay-runtime/index.d.ts"
-      ],
-      "../src/components/post/__generated__/Posts_posts.graphql.ts": [
-        "../node_modules/@types/relay-runtime/index.d.ts"
       ],
       "../src/models/auth/AuthRelayModel.ts": [
         "../src/models/auth/AuthModel.ts"
@@ -2389,6 +2433,15 @@
       ],
       "../src/pages/HomePage.tsx": [
         "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx": [
+        "../node_modules/@types/react/index.d.ts"
+      ],
+      "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts": [
+        "../node_modules/@types/relay-runtime/index.d.ts"
+      ],
+      "../src/pages/PostsByCursorPage/index.ts": [
+        "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx"
       ],
       "../src/pages/PostsPage/PostsPage.tsx": [
         "../node_modules/@types/react/index.d.ts"
@@ -2602,13 +2655,14 @@
       "../src/components/common/Router.tsx",
       "../src/components/common/SingOutButton.tsx",
       "../src/components/common/ThemeToggleButton.tsx",
-      "../src/components/post/Posts.tsx",
+      "../src/components/post/PostsByCursor/PostsByCursor.tsx",
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursorPaginationQuery.graphql.ts",
+      "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts",
+      "../src/components/post/PostsByCursor/index.ts",
       "../src/components/post/PostsByOffset/PostsByOffset.tsx",
       "../src/components/post/PostsByOffset/__generated__/PostsByOffsetRefetchQuery.graphql.ts",
       "../src/components/post/PostsByOffset/__generated__/PostsByOffset_node.graphql.ts",
       "../src/components/post/PostsByOffset/index.ts",
-      "../src/components/post/__generated__/PostsPaginationQuery.graphql.ts",
-      "../src/components/post/__generated__/Posts_posts.graphql.ts",
       "../src/constants/pathName.ts",
       "../src/hooks/common/useInput.ts",
       "../src/index.tsx",
@@ -2621,6 +2675,9 @@
       "../src/models/auth/relay/SingUp/__generated__/SignUpMutation.graphql.ts",
       "../src/models/auth/relay/SingUp/index.ts",
       "../src/pages/HomePage.tsx",
+      "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx",
+      "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts",
+      "../src/pages/PostsByCursorPage/index.ts",
       "../src/pages/PostsPage/PostsPage.tsx",
       "../src/pages/PostsPage/__generated__/PostsPageQuery.graphql.ts",
       "../src/pages/PostsPage/index.ts",
@@ -3255,6 +3312,26 @@
         1
       ],
       [
+        "../src/components/post/PostsByCursor/Posts.tsx",
+        1
+      ],
+      [
+        "../src/components/post/PostsByCursor/PostsByCursor.tsx",
+        1
+      ],
+      [
+        "../src/components/post/PostsByCursor/__generated__/PostsByCursorPaginationQuery.graphql.ts",
+        1
+      ],
+      [
+        "../src/components/post/PostsByCursor/__generated__/PostsByCursor_postsByCursorNode.graphql.ts",
+        1
+      ],
+      [
+        "../src/components/post/PostsByCursor/index.ts",
+        1
+      ],
+      [
         "../src/components/post/PostsByOffset/PostsByOffset.tsx",
         1
       ],
@@ -3324,6 +3401,18 @@
       ],
       [
         "../src/pages/HomePage.tsx",
+        1
+      ],
+      [
+        "../src/pages/PostsByCursorPage/PostsByCursorPage.tsx",
+        1
+      ],
+      [
+        "../src/pages/PostsByCursorPage/__generated__/PostsByCursorPageQuery.graphql.ts",
+        1
+      ],
+      [
+        "../src/pages/PostsByCursorPage/index.ts",
         1
       ],
       [

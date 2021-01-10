@@ -14,12 +14,13 @@ const PostsByOffset: React.FC<PostsByOffsetProps> = ({ node, relay }) => {
     refetchVariables,
     setRefetchVariable,
   ] = useState<PostsPageQueryVariables>();
-  const onClickRefetch = () => {
+  const onClickRefetch = (): void => {
     let _refetchVariables:
       | PostsPageQueryVariables
       | ((
           fragmentVariables: PostsPageQueryVariables,
         ) => PostsPageQueryVariables);
+
     if (!refetchVariables) {
       _refetchVariables = (fragmentVariables: PostsPageQueryVariables) => {
         const newFragmentVariables = {

@@ -25,6 +25,9 @@ const Nav: React.FC = () => {
         <li>
           <Link to={PathName.POSTS}>Posts</Link>
         </li>
+        <li>
+          <Link to={PathName.POSTS_BY_CURSOR}>Posts by cursor</Link>
+        </li>
       </LinkListContainer>
     </nav>
   );
